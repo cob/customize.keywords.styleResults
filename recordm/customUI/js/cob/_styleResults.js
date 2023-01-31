@@ -16,6 +16,7 @@ cob.custom.customize.push(function (core, utils, ui) {
                     || styleValue.trim() == "*"
                 ) {
                     node.classList.add(styleClass.trim())
+                    node.classList.add("cobStyleColummn")
                     break
                 }
             }

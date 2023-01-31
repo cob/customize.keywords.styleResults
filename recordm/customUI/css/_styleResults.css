@@ -68,29 +68,14 @@
 	background-color:#bebebe;
 }
 
-
 .BgRed,
 .BgGreen,
 .BgBlue, 
 .BgOrange,
 .BgGray {
   color: white;
+}
+
+.cobStyleColummn{
   text-align: center;
-} 
-.Red,
-.Green,
-.Blue,
-.Orange,
-.Gray,
-.DimRed,
-.DimGreen,
-.DimBlue,
-.DimOrange,
-.DimGray,
-.BgDimRed,
-.BgDimGreen,
-.BgDimBlue, 
-.BgDimOrange,
-.BgDimGray {
-	text-align: center;
 }
