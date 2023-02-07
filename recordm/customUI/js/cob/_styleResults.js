@@ -44,4 +44,50 @@ cob.custom.customize.push(function (core, utils, ui) {
             }
         }
     })
-})
+
+    core.customizeAllInstances((instance, presenter) => {
+      const matcher = /[$]style\[(.*styleField.*)?\]/;  
+      const styleFields = presenter.findFieldPs((fp) => matcher.exec( fp.field.fieldDefinition.description ) );
+      styleFields.forEach((fp) => {
+            
+        const matchColumnRegex = /\$styleResultColumn\((.*)\)/
+        let styleColField = matchColumnRegex.exec(fp.field.fieldDefinition.description)
+        if(styleColField) {
+
+            const updateStyle = function() {
+              const fieldValue = fp.getValue();
+              const relevantMapping = styleColField[1].split(",")
+              const node = fp.content()[0];
+
+              // Choose node to affect
+              let valueNode = node.querySelector(".radiogroup")
+              if(!valueNode) {
+                valueNode = node.querySelector("td label")
+              } 
+
+              // Clean previous class
+              for(let mapping of relevantMapping) {
+                let [styleValue, styleClass] = mapping.split(":")
+                valueNode.classList.remove(styleClass.trim())
+              }
+    
+              // Set new class
+              for(let mapping of relevantMapping) {
+                  let [styleValue, styleClass] = mapping.split(":")
+                  if( styleValue.trim() == fieldValue
+                      || styleValue.trim() == "" && fieldValue == undefined
+                      || styleValue.trim() == "*"
+                  ) {
+                      valueNode.classList.add(styleClass.trim())
+                      break
+                  }
+              }
+            }
+
+            updateStyle();
+            presenter.onFieldChange(fp.field.fieldDefinition.name, updateStyle);
+        }
+      });
+    });
+
+  })
