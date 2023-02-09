@@ -50,22 +50,22 @@
 	background-color: orange;
 }
 .BgGray {
-  background-color:gray;
+  	background-color:gray;
 }
 .BgDimRed {
-  background-color: #f7ced4;
+  	background-color:lightpink;
 }
 .BgDimGreen {
-  background-color:#e3f3c8;
+  	background-color:#C1FA77;
 }
 .BgDimBlue {
-	background-color:#e4f3f5;
+	background-color:#def4f9;
 }
 .BgDimOrange {
-	background-color:#fce9df;
+	background-color:#FFE0D2;
 }
 .BgDimGray {
-	background-color: #e2e1df;
+	background-color:#bebebe;
 }
 
 .BgRed,
@@ -93,16 +93,16 @@
 }
 .custom-styleField .BgOrange{
 	background-color: #f7d089;
-  color: inherit;
+	color: inherit;
 }
 .custom-styleField .BgGray {
-  background-color:#b1b0b0;
+  	background-color:#b1b0b0;
 }
 .custom-styleField .BgDimRed {
-  background-color:#f7ced4;
+  	background-color:#f7ced4;
 }
 .custom-styleField .BgDimGreen {
-  background-color:#C1FA7750;
+  	background-color:#C1FA7750;
 }
 .custom-styleField .BgDimBlue {
 	background-color:#e4f3f5;
