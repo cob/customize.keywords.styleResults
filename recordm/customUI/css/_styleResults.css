@@ -53,19 +53,19 @@
   background-color:gray;
 }
 .BgDimRed {
-  background-color:lightpink;
+  background-color: #f7ced4;
 }
 .BgDimGreen {
-  background-color:#C1FA77;
+  background-color:#e3f3c8;
 }
 .BgDimBlue {
-	background-color:#def4f9;
+	background-color:#e4f3f5;
 }
 .BgDimOrange {
-	background-color:#FFE0D2;
+	background-color:#fce9df;
 }
 .BgDimGray {
-	background-color:#bebebe;
+	background-color: #e2e1df;
 }
 
 .BgRed,
@@ -78,4 +78,38 @@
 
 .cobStyleColummn{
   text-align: center;
+}
+
+
+/* Background Color Classes for instance*/
+.custom-styleField .BgRed {
+	background-color: #e04b4b;
+}
+.custom-styleField .BgGreen {
+	background-color: #6c9a1d;
+}
+.custom-styleField .BgBlue{
+	background-color: #6880c8;
+}
+.custom-styleField .BgOrange{
+	background-color: #f7d089;
+  color: inherit;
+}
+.custom-styleField .BgGray {
+  background-color:#b1b0b0;
+}
+.custom-styleField .BgDimRed {
+  background-color:#f7ced4;
+}
+.custom-styleField .BgDimGreen {
+  background-color:#C1FA7750;
+}
+.custom-styleField .BgDimBlue {
+	background-color:#e4f3f5;
+}
+.custom-styleField .BgDimOrange {
+	background-color:#fce9df;
+}
+.custom-styleField .BgDimGray {
+	background-color:#e2e1df;
 }
