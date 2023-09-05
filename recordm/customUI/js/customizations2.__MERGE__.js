@@ -1,1 +1,1 @@
-import("./cob/_styleResults.js");
+import "./cob/_styleResults.js";
