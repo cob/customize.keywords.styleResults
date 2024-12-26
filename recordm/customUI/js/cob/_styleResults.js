@@ -15,7 +15,7 @@ cob.custom.customize.push(function (core, utils, ui) {
                     || styleValue.trim() == "" && fieldValue == undefined
                     || styleValue.trim() == "*"
                 ) {
-                    node.classList.add(styleClass.trim())
+                    node.classList.add(...styleClass.trim().split(/\s+/))
                     node.classList.add("cobStyleColummn")
                     break
                 }
@@ -38,7 +38,7 @@ cob.custom.customize.push(function (core, utils, ui) {
                         || styleValue.trim() == "" && fieldValue == undefined
                         || styleValue.trim() == "*"
                     ) {
-                        node.classList.add(styleClass.trim())
+                        node.classList.add(...styleClass.trim().split(/\s+/))
                         break
                     }
                 }
